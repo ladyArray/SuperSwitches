@@ -11,11 +11,11 @@ body {
 }
 
 a {
-  color: #01b1ea;
+  color: rgb(88, 85, 81);
 }
 
 a:visited {
-  color: #01b1ea;
+  color: #ea7d01;
 }
 
 a:hover {
@@ -50,14 +50,14 @@ td {
   width: 80%;
   margin: 0px auto;
   box-shadow: 0px 0px 10px gray;
-  background: white;
+  background: #53514e;
 }
 
 /*HEADER*/
 
 #header {
   height: 145px;
-  background: #f0f0f0;
+  background: #53514e;
 }
 
 #logo {
@@ -77,7 +77,7 @@ td {
   letter-spacing: 4px;
   font-family: "Open Sans", Helvetica, Arial;
   text-transform: uppercase;
-  color: #01b1ea;
+  color: #ffa929;
   font-weight: bold;
   text-decoration: none;
   margin-top: 18px;
@@ -87,7 +87,7 @@ td {
 }
 
 #logo a:hover {
-  text-shadow: 0px 2px 1px #222222, 0px 0px 4px #01b1ea;
+  text-shadow: 0px 2px 1px #222222, 0px 0px 4px #ffa929;
 }
 
 /*MENU*/
@@ -96,7 +96,7 @@ td {
   background: #222;
   color: white;
   height: 55px;
-  border-bottom: 4px solid #01b1ea;
+  border-bottom: 4px solid #ffa929;
 }
 
 #menu ul {
@@ -126,7 +126,7 @@ td {
 }
 
 #menu a:hover {
-  background: #01b1ea;
+  background: #ffa929;
 }
 
 /*CONTENT*/
@@ -154,7 +154,7 @@ td {
 
 #lateral h3 {
   display: block;
-  color: #222;
+  color: rgb(255, 255, 255);
   width: 100%;
   text-align: center;
   padding-top: 2px;
@@ -162,8 +162,8 @@ td {
   margin-bottom: 15px;
   font-size: 16px;
   font-weight: bold;
-  background: #e1e1e1;
-  border-bottom: 2px solid #01b1ea;
+  background: #807c78;
+  border-bottom: 2px solid #ffa929;
 }
 
 #lateral ul {
@@ -295,7 +295,7 @@ button {
 }
 
 .product a {
-  color: black;
+  color: rgb(255, 255, 255);
   text-decoration: none;
 }
 
@@ -369,7 +369,7 @@ button {
   padding-bottom: 10px;
   color: white;
   background: #222222;
-  border-top: 4px solid #01b1ea;
+  border-top: 4px solid #ffa929;
 }
 
 /*CARRITO*/
