@@ -1,5 +1,5 @@
-CREATE DATABASE superswitches;
-USE superswitches;
+CREATE DATABASE superswitchesdb;
+USE superswitchesdb;
 
 CREATE TABLE usuarios(
 id              int(255) auto_increment not null,
