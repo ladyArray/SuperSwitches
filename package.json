@@ -35,5 +35,25 @@
         "react"
       ]
     }
-  }
+  },
+  "main": ".eslintrc.js",
+  "dependencies": {
+    "eslint-import-resolver-node": "^0.3.6",
+    "eslint-module-utils": "^2.7.4",
+    "eslint-plugin-es": "^4.1.0",
+    "eslint-scope": "^7.1.1",
+    "eslint-utils": "^3.0.0",
+    "eslint-visitor-keys": "^3.3.0",
+    "mailgun-js": "^0.22.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ladyArray/SuperSwitches.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/ladyArray/SuperSwitches/issues"
+  },
+  "homepage": "https://github.com/ladyArray/SuperSwitches#readme",
+  "description": ""
 }
