@@ -40,5 +40,3 @@ if(class_exists($nombre_controlador)){
 }
 
 require_once 'views/layout/footer.php';
-
-
