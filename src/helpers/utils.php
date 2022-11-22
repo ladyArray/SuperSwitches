@@ -28,7 +28,7 @@ class Utils{
 	}
 
 	public static function showCategorias(){
-		require_once 'models/categoria.php';
+		require_once 'src/models/categoria.php';
 		$categoria = new Categoria();
 		$categorias = $categoria->getAll();
 		return $categorias;

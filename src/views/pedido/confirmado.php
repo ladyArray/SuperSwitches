@@ -25,11 +25,11 @@
 						<?php if ($producto->imagen != null): ?>
 							<img src="<?= base_url ?>uploads/images/<?= $producto->imagen ?>" class="img_carrito" />
 						<?php else: ?>
-							<img src="<?= base_url ?>assets/img/camiseta.png" class="img_carrito" />
+							<img src="<?= base_url ?>src/assets/img/camiseta.png" class="img_carrito" />
 						<?php endif; ?>
 					</td>
 					<td>
-						<a href="<?= base_url ?>producto/ver&id=<?= $producto->id ?>"><?= $producto->nombre ?></a>
+						<a href="<?= base_url ?>src/producto/ver&id=<?= $producto->id ?>"><?= $producto->nombre ?></a>
 					</td>
 					<td>
 						<?= $producto->precio ?>

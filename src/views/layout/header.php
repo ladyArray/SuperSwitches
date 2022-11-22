@@ -3,14 +3,14 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>SuperSwitches</title>
-		<link rel="stylesheet" href="<?=base_url?>assets/css/styles.css" />
+		<link rel="stylesheet" href="<?=base_url?>src/assets/css/styles.css" />
 	</head>
 	<body>
 		<div id="container">
 			<!-- CABECERA -->
 			<header id="header">
 				<div id="logo">
-				<img src="assets/img/logo.webp" alt="Logo de SuperSwitches" />
+				<img src="src/assets/img/logo.webp" alt="Logo de SuperSwitches" />
 					<a href="<?=base_url?>">
           SuperSwitches
 					</a>
@@ -26,7 +26,7 @@
 					</li>
 					<?php while($cat = $categorias->fetch_object()): ?>
 						<li>
-							<a href="<?=base_url?>categoria/ver&id=<?=$cat->id?>"><?=$cat->nombre?></a>
+							<a href="<?=base_url?>src/categoria/ver&id=<?=$cat->id?>"><?=$cat->nombre?></a>
 						</li>
 					<?php endwhile; ?>
 				</ul>
