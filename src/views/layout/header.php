@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>SuperSwitches</title>
+		<link rel="icon" type="image/vnd.microsoft.icon" href="<?=base_url?>src/assets/img/favicon/favicon.ico">
 		<link rel="stylesheet" href="<?=base_url?>src/assets/css/index.css" />
 	</head>
 	<body>

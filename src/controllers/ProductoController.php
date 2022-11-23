@@ -7,7 +7,7 @@ class productoController{
 		$producto = new Producto();
 		$productos = $producto->getRandom(6);
 
-		// renderizar vista
+
 		require_once 'src/views/producto/destacados.php';
 	}
 
@@ -30,7 +30,7 @@ class productoController{
 		$producto = new Producto();
 		$productos = $producto->getAll();
 
-		require_once 'src/views/producto/gestion.php';
+		require_once 'src/views/producto/gestor.php';
 	}
 
 	public function crear(){
