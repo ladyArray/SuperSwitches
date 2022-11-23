@@ -10,7 +10,7 @@
 					<?php if ($product->imagen != null): ?>
 						<img src="<?= base_url ?>uploads/images/<?= $product->imagen ?>" />
 					<?php else: ?>
-						<img src="<?= base_url ?>assets/img/camiseta.png" />
+						<img src="<?= base_url ?>assets/img/teclado.jpg" />
 					<?php endif; ?>
 					<h2><?= $product->nombre ?></h2>
 				</a>

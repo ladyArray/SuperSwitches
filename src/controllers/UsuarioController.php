@@ -1,5 +1,5 @@
 <?php
-require_once 'models/usuario.php';
+require_once 'src/models/usuario.php';
 
 class usuarioController{
 
@@ -8,7 +8,7 @@ class usuarioController{
 	}
 
 	public function registro(){
-		require_once 'views/usuario/registro.php';
+		require_once 'src/views/usuario/registro.php';
 	}
 
 	public function save(){
@@ -78,4 +78,4 @@ class usuarioController{
 		header("Location:".base_url);
 	}
 
-} // fin clase
+}

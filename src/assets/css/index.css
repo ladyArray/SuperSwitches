@@ -295,7 +295,7 @@ button {
 }
 
 .product a {
-  color: rgb(255 255 255);
+  color: #ffa929;
   text-decoration: none;
 }
 
@@ -315,6 +315,7 @@ button {
 }
 
 .product h2 {
+  color: #ffa929;
   font-size: 18px;
   margin-bottom: 10px;
 }

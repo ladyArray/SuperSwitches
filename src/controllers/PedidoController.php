@@ -42,7 +42,7 @@ class pedidoController{
 				$_SESSION['pedido'] = "failed";
 			}
 
-			header("Location:".base_url.'src/pedido/confirmado');
+			header("Location:".base_url.'pedido/confirmado');
 		}else{
 			// Redigir al index
 			header("Location:".base_url);
@@ -92,7 +92,7 @@ class pedidoController{
 
 			require_once 'src/views/pedido/detalle.php';
 		}else{
-			header('Location:'.base_url.'src/pedido/mis_pedidos');
+			header('Location:'.base_url.'pedido/mis_pedidos');
 		}
 	}
 
@@ -119,7 +119,7 @@ class pedidoController{
 			$pedido->setEstado($estado);
 			$pedido->edit();
 
-			header("Location:".base_url.'src/pedido/detalle&id='.$id);
+			header("Location:".base_url.'pedido/detalle&id='.$id);
 		}else{
 			header("Location:".base_url);
 		}

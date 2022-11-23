@@ -13,7 +13,7 @@ CONSTRAINT pk_usuarios PRIMARY KEY(id),
 CONSTRAINT uq_email UNIQUE(email)
 )ENGINE=InnoDb;
 
-INSERT INTO usuarios VALUES(NULL, 'Admin', 'Admin', 'admin@admin.com', 'contraseña', 'admin', null);
+INSERT INTO usuarios VALUES(NULL, 'Admin', 'Admin', 'admin@admin.com', 'password', 'admin', null);
 
 CREATE TABLE categorias(
 id              int(255) auto_increment not null,

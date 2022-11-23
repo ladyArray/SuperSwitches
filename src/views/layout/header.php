@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>SuperSwitches</title>
-		<link rel="stylesheet" href="<?=base_url?>src/assets/css/styles.css" />
+		<link rel="stylesheet" href="<?=base_url?>src/assets/css/index.css" />
 	</head>
 	<body>
 		<div id="container">
@@ -26,7 +26,7 @@
 					</li>
 					<?php while($cat = $categorias->fetch_object()): ?>
 						<li>
-							<a href="<?=base_url?>src/categoria/ver&id=<?=$cat->id?>"><?=$cat->nombre?></a>
+							<a href="<?=base_url?>categoria/ver&id=<?=$cat->id?>"><?=$cat->nombre?></a>
 						</li>
 					<?php endwhile; ?>
 				</ul>

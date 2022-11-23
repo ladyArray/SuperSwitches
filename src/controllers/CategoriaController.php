@@ -1,6 +1,6 @@
 <?php
-require_once 'models/categoria.php';
-require_once 'models/producto.php';
+require_once 'src/models/categoria.php';
+require_once 'src/models/producto.php';
 
 class categoriaController{
 
@@ -9,7 +9,7 @@ class categoriaController{
 		$categoria = new Categoria();
 		$categorias = $categoria->getAll();
 
-		require_once 'views/categoria/index.php';
+		require_once 'src/views/categoria/index.php';
 	}
 
 	public function ver(){
@@ -27,12 +27,12 @@ class categoriaController{
 			$productos = $producto->getAllCategory();
 		}
 
-		require_once 'views/categoria/ver.php';
+		require_once 'src/views/categoria/ver.php';
 	}
 
 	public function crear(){
 		Utils::isAdmin();
-		require_once 'views/categoria/crear.php';
+		require_once 'src/views/categoria/crear.php';
 	}
 
 	public function save(){

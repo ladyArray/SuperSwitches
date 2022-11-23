@@ -1,5 +1,5 @@
 <?php
-require_once 'models/producto.php';
+require_once 'src/models/producto.php';
 
 class carritoController{
 
@@ -9,7 +9,7 @@ class carritoController{
 		}else{
 			$carrito = array();
 		}
-		require_once 'views/carrito/index.php';
+		require_once 'src/views/carrito/index.php';
 	}
 
 	public function add(){
