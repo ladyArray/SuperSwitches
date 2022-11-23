@@ -124,6 +124,7 @@ class productoController{
 
 			$delete = $producto->delete();
 			if($delete){
+
 				$_SESSION['delete'] = 'complete';
 			}else{
 				$_SESSION['delete'] = 'failed';
