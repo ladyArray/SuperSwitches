@@ -1,26 +1,33 @@
-<?php if (isset($_SESSION['identity'])): ?>
-	<h1>Realizar pedido</h1>
-	<p>
-		<a href="<?= base_url ?>carrito/index">Ver los productos y el precio del pedido</a>
-	</p>
-	<br/>
-
-	<h3>Dirección para el envio:</h3>
-	<form action="<?=base_url.'pedido/add'?>" method="POST">
-		<label for="provincia">Provincia</label>
-		<input type="text" name="provincia" required />
-
-		<label for="ciudad">Ciudad</label>
-		<input type="text" name="localidad" required />
-
-		<label for="direccion">Dirección</label>
-		<input type="text" name="direccion" required />
-
-		<input type="submit" value="Confirmar pedido" />
-	</form>
-
+<?php if (isset($gestor)): ?>
+	<h1>Gestionar pedidos</h1>
 <?php else: ?>
-	<h1>¡Necesitas estar identificado!</h1>
-	<p>Necesitas estar logueado en nuestra web para poder realizar tu pedido. :(</p>
+	<h1>Mis pedidos</h1>
 <?php endif; ?>
+<table>
+	<tr>
+		<th>Nº Pedido</th>
+		<th>Coste</th>
+		<th>Fecha</th>
+		<th>Estado</th>
+	</tr>
+	<?php
+	while ($ped = $pedidos->fetch_object()):
+		?>
 
+		<tr>
+			<td>
+				<a href="<?= base_url ?>pedido/detalle&id=<?= $ped->id ?>"><?= $ped->id ?></a>
+			</td>
+			<td>
+				<?= $ped->coste ?> $
+			</td>
+			<td>
+				<?= $ped->fecha ?>
+			</td>
+			<td>
+				<?=Utils::showStatus($ped->estado)?>
+			</td>
+		</tr>
+
+	<?php endwhile; ?>
+</table>

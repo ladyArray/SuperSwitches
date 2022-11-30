@@ -44,5 +44,5 @@
 	<?php endif; ?>
 
 <?php elseif (isset($_SESSION['pedido']) && $_SESSION['pedido'] != 'complete'): ?>
-	<h1>Tu pedido NO ha podido procesarse, inténtalo de nuevo.</h1>
+	<h1>Tu pedido no ha podido procesarse, inténtalo de nuevo.</h1>
 <?php endif; ?>
